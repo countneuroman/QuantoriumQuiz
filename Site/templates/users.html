@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}
+Все пользователи бота
+{% endblock %}
+{% block body %}
+<div class="container mt-5">
+    <h1>Все пользователи чат-бота</h1>
+    {% for el in users_info %}
+    <div class="alert alert-info">
+        <h2>{% print(el[0]) %}</h2>
+        <p>{% print(el[1]) %}</p>
+        <p><b>Имя: {{ el[2] }}</b></p>
+        <p><b>Рейтинг: {{ el[3] }}</b></p>
+        <a href="" class="btn btn-warning">Вас посчитали, поздравляю!</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

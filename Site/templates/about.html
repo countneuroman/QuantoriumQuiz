@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title  %}
+
+
+{% endblock %}
+
+
+{% block body %}
+<style>
+.beauty-rotate {
+            width: 600px;
+            height: 600px;
+            border: 4px double #bd6c46; /* Рамка */
+            overflow: hidden;
+            -webkit-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+        } 
+.beauty-rotate:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+</style>
+
+<h1> Информация о нас </h1>
+<center>
+    <div class="beauty-rotate">
+    <img  src="static/3.jpeg" width="70%" height="70%" class="image-center">
+    </div>
+</center>
+{% endblock %}
